@@ -182,7 +182,7 @@ img {
 
 .cmds {
 
-	line-height: 100%;
+	line-height: 100px;
 
 	background-image: linear-gradient(#343448, gray);
 
@@ -192,6 +192,6 @@ img {
 
 	padding: 5px;
         
-        font-size: 25%
+        font-size: 10px
 
 }
