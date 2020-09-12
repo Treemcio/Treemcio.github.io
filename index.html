@@ -13,7 +13,25 @@
   <a href="./dashboard.html">Dashboard</a>
   <a href="./server.html">Server</a>
   <a href="#"> </a>
+<script> 
+import base64
 
+API_ENDPOINT = 'https://discord.com/api/v6'
+CLIENT_ID = '332269999912132097'
+CLIENT_SECRET = '937it3ow87i4ery69876wqire'
+
+def get_token():
+  data = {
+    'grant_type': 'client_credentials',
+    'scope': 'identify connections'
+  }
+  headers = {
+    'Content-Type': 'application/x-www-form-urlencoded'
+  }
+  r = requests.post('%s/oauth2/token' % API_ENDPOINT, data=data, headers=headers, auth=(CLIENT_ID, CLIENT_SECRET))
+  r.raise_for_status()
+  return r.json()
+</script>
 </div>
 <!-- Use any element to open the sidenav -->
 <button style="color: white; background-color: #343448; border: 0.5px solid white; margin: 10px" onclick="openNav();">|||</button>
