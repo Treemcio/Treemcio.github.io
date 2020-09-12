@@ -182,7 +182,7 @@ img {
 
 .cmds {
 
-	line-height: device-width / 90%;
+	line-height: 10%;
 
 	background-image: linear-gradient(#343448, gray);
 
@@ -192,6 +192,6 @@ img {
 
 	padding: 5px;
         
-        font-size: 10px
+        font-size: 10%
 
 }
